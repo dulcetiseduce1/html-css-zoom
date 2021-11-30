@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  overflow-y: hidden;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightslategray;
+  transition: 0.3s;
+}
+
+.fa-chevron-up {
+  font-size: 15px;
+}
+
+header {
+  width: 100%;
+  min-height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+}
+
+.camera,
+.full {
+  background-color: #4a4a4a;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  color: white;
+}
+
+main {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.box-item {
+  margin: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video-container {
+  width: calc(100% / 7 - 10px);
+  height: 120px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-image: url("https://picsum.photos/seed/picsum/300/200");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.name-camera {
+  background-color: #4a4a4a94;
+  color: white;
+  padding: 5px;
+  position: absolute;
+  bottom: 1px;
+}
+
+footer {
+  width: 100%;
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.video-setting ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.video-setting a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+/* .video-setting  */
+
+footer i {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+/* chat setting */
+
+.chat-setting ul {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.chat-setting li {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.chat-setting i {
+  display: flex;
+  justify-content: center;
+}
+
+.chat-setting a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.end-meeting {
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.end-meeting a {
+  color: red;
+  padding: 38px;
+}
